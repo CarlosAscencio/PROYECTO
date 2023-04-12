@@ -12,14 +12,12 @@
 
 
 
-/** selector universal para el reseteo de la pagina */
+
 *{
-    /**
-        con el universal solo podemos tener: margin, padding
-     */
+    
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /** validamos que las cajas hijas esten solo en el contenedor padre */
+    box-sizing: border-box; 
 }
 .tituloindex{
     font-family: 'Alkatra', cursive;
@@ -53,7 +51,7 @@
 }
 
 body{
-    /** asignando tipo de fuente */
+    
     font-family: 'Delius Swash Caps', cursive;
     background-color: #c7c2c2;
     background-image: url("../img/sss.jpg");
@@ -63,15 +61,14 @@ body{
 }
 
 header{
-    /** propiedad para colocar imagen de fondo */
+    
     background-image: url(../img/wwww.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 300px; /* asignando alto a la caja */
+    height: 300px; 
     color: white;
-    text-align: center; /** alinea el texto al centro */
-    line-height: 200px; /** propiedad que toma el espacio del alto para que el texto
-                        quede al centro */
+    text-align: center; 
+    line-height: 200px; 
 }
 
 nav{
@@ -81,13 +78,11 @@ nav{
 }
 
 nav ul li{
-    /**
-        display: propiedad que define como se va colocar uno o varios elementos
-        dentro de valores estan: inline-block, block, flex
-     */
-    display: inline-block;  /** cada elemento li estara en linea */
+    
+     
+    display: inline-block; 
     line-height: 50px;
-     /** no va tener ningun estilo la lista */
+ 
     margin: 0 10px;
 }
 
@@ -108,13 +103,13 @@ li a.active, li a:hover{
 
 nav ul li a{
     color: white;
-    text-decoration: none; /** no va tener ninguna decoracion el texto */
+    text-decoration: none; 
 }
 
-/** agregando estilos al contenido principal */
+
 .box-center{
-    width: 80%; /** define el ancho */
-    margin: auto; /** se toma el margen automatico que provee el navegador */
+    width: 80%; 
+    margin: auto; 
     padding: 25px; 
 }
 
@@ -134,26 +129,22 @@ h1{
     font-family: 'Bungee Spice', cursive;
 
    
-    /** 
-        1rem => 16px
-    */
-    font-size: 2rem; /** asignando tamaño de la fuente */
+    
+    font-size: 2rem; 
     color: #ff0000;
 }
 .titulo2{
     text-align: center;
     padding-top: 11%;
     padding-bottom: 2%;
-    /** 
-        1rem => 16px
-    */
-    font-size: 2rem; /** asignando tamaño de la fuente */
+    
+    font-size: 2rem; 
     color: #1221a3;
 }
 
 .box-center{
-    width: 80%; /** define el ancho */
-    margin: auto; /** se toma el margen automatico que provee el navegador */
+    width: 80%; 
+    margin: auto; 
     padding: 25px; 
 }
 
@@ -170,20 +161,14 @@ footer{
     background-position: 22%;
 }
 
-/** 
-    display: Asigna como va trabajar un elemento
-        -inline-block: elementos que se ponen en bloquen y en linea
-        -flex: los elementos se asignan de forma flexibe
-        -grid: los elementos estaran asociados en columnas y filas
-*/
+
 
 .footer_container{
     display: grid;
-    /** asignamos cuantas columnas queremos  */
+   
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    padding: 50px 0; /** 50px arriba y abajo, 0 pixeles derecha e izquierda */
-    /** gap: espacio que le asignamos dentro de las columnas */
+    padding: 50px 0; 
     gap: 20px;
     color: white;
 }
@@ -192,7 +177,7 @@ footer{
     color: #fff;
   }
 
-/** diseñando el apartado de los iconos */
+
 .margen{
     margin: 30px 0;
 }
@@ -201,8 +186,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-flow: row nowrap; /** estamos trabajando con elementos si van estar en fila y los estamos en volviendo
-                            en una sola linea */
+    flex-flow: row nowrap; 
 }
 
 .icons a{
@@ -224,35 +208,33 @@ footer{
     height: 50px;
 }
 
-/** 
-    pseudoclase: hover
-*/
+
 .footer_container .info .icons a:hover{
     background: transparent;
 }
 
 
-/** apartado de viajes.html */
+
 .seccion-card{
-    display: flex; /** indicamos que los elementos van a ser flexibles */
+    display: flex; 
     justify-content: space-around;
-    flex-flow: row wrap; /** envuelve los elementos en una fila */
+    flex-flow: row wrap; 
 }
 
 .box-centerh{
-    display: flex; /** indicamos que los elementos van a ser flexibles */
+    display: flex; 
     justify-content: space-around;
-    flex-flow: row wrap; /** envuelve los elementos en una fila */
+    flex-flow: row wrap; 
 }
 
 .card{
     width: 30%;
     height: 300px;
-    /** colocando sombra al contenedor */
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); /** x (horizontal), y(vertical), blur-radius (desenfoque), spread-radius (propagacion), color */
+   
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); 
     margin-bottom: 30px;
-    background-size: cover; /** indicamos que lo haya dentro de la caja se va adaptar al tamaño de la tarjeta */
-    background-position: center; /** indicamos el posicionamiento de los elementos de la tarjeta */
+    background-size: cover; 
+    background-position: center; 
     transition: all .5s;
 }
 
@@ -260,29 +242,29 @@ footer{
     /** */
     width: 100%;
     height: 100%;
-    object-fit: cover; /** solo se utiliza para imagenes o videos que se adapten al tamaño del contenedor */
+    object-fit: cover; 
     
 }
 
 .card:hover{
-    transform: scale(1.1); /** x= 1.1, y = 1.1) */
+    transform: scale(1.1); 
 }
 
 .seccion-videos{
-    display: flex; /** indicamos que los elementos van a ser flexibles */
+    display: flex; 
     justify-content: space-around;
-    flex-flow: row wrap; /** envuelve los elementos en una fila */
+    flex-flow: row wrap; 
     padding-bottom: 4%;
 }
 
 .videos{
     width: 30%;
     height: 300px;
-    /** colocando sombra al contenedor */
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); /** x (horizontal), y(vertical), blur-radius (desenfoque), spread-radius (propagacion), color */
+    
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); 
     margin-bottom: 30px;
-    background-size: cover; /** indicamos que lo haya dentro de la caja se va adaptar al tamaño de la tarjeta */
-    background-position: center; /** indicamos el posicionamiento de los elementos de la tarjeta */
+    background-size: cover; 
+    background-position: center; 
     transition: all .5s;
 }
 
@@ -290,48 +272,48 @@ footer{
     /** */
     width: 100%;
     height: 100%;
-    object-fit: cover; /** solo se utiliza para imagenes o videos que se adapten al tamaño del contenedor */
+    object-fit: cover; 
     
 }
 
 .videos:hover{
-    transform: scale(1.1); /** x= 1.1, y = 1.1) */
+    transform: scale(1.1);
 }
 
-/** apartado de viajes.html */
+
 .seccion-card-index{
-    display: flex; /** indicamos que los elementos van a ser flexibles */
+    display: flex; 
     justify-content: space-around;
-    flex-flow: row wrap; /** envuelve los elementos en una fila */
+    flex-flow: row wrap; 
 }
 
 .card-index{
     width: 30%;
     height: 300px;
-    /** colocando sombra al contenedor */
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); /** x (horizontal), y(vertical), blur-radius (desenfoque), spread-radius (propagacion), color */
+    
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); 
     margin-bottom: 30px;
-    background-size: cover; /** indicamos que lo haya dentro de la caja se va adaptar al tamaño de la tarjeta */
-    background-position: center; /** indicamos el posicionamiento de los elementos de la tarjeta */
+    background-size: cover; 
+    background-position: center; 
     transition: all .5s;
 }
 
 .seccion-card-index img{
-    /** */
+   
     width: 100%;
     height: 100%;
-    object-fit: cover; /** solo se utiliza para imagenes o videos que se adapten al tamaño del contenedor */
+    object-fit: cover; 
     
 }
 
 .card-index:hover{
-    transform: rotate(0.1turn); /** x= 1.1, y = 1.1) */
+    transform: rotate(0.1turn); 
 }
 
-/** apartado de contacto.html */
+
 .contact-fondo{
     background-image: url("../img/viaje4.jpg");
-    height: 40rem; /** 1rem = 16px */
+    height: 40rem; 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center -100px;
@@ -339,26 +321,26 @@ footer{
 
 .formulario{
     background-color: rgba(56, 37, 37, 0.411);
-    margin: -39rem auto 0 auto; /** top, right, bottom, left */
+    margin: -39rem auto 0 auto; 
     width: 95%;
     padding: 3rem;
 }
 
 form label{
-    font-weight: bold; /** peso de la letra */
+    font-weight: bold;
     color:antiquewhite;
 }
 
-/** selector por atributo */
+
 input[type="text"],
 input[type="email"]{
     width: 100%;
     height: 30px;
-    padding: 3px 10px; /** top-bottom - right-left */
+    padding: 3px 10px; 
     border: 1px solid #ffffff;
     border-radius: 3px;
     margin: 8px 0;
-    display: block; /** los elementos se aplican uno abajo del otro */
+    display: block; 
     background-color: #c221214b;
 }
 
@@ -368,7 +350,7 @@ textarea{
     border: 1px solid #ffffff52;
     border-radius: 3px;
     margin: 8px 0;
-    display: block; /** los elementos se aplican uno abajo del otro */
+    display: block; 
     background-color: #4d3a3a38;
 }
 
@@ -411,6 +393,14 @@ input[type="submit"]:hover{
     }
 }
 
+@media (max-width:768px){
+    .seccion-videos{
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+
 @media (max-width: 1100px){
     .icons{
         width: 100% !important; /** con el !important asignamos que esto va ser mas importante */
@@ -422,6 +412,14 @@ input[type="submit"]:hover{
     .box-section{
         display: inline-block;
         text-align: center;
+    }
+    .seccion-videos{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+    .videos iframe{
+        width: 300px !important;
+
     }
 
     .footer_container{
@@ -440,6 +438,9 @@ input[type="submit"]:hover{
     }
 
 }
+
+
+
 
 
 
