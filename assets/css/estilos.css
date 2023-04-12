@@ -1,0 +1,448 @@
+/** importando una fuente */
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Bungee+Spice&family=Pacifico&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Bungee+Spice&family=Codystar:wght@300&family=Pacifico&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Bungee+Spice&family=Cantata+One&family=Codystar:wght@300&family=Pacifico&family=Rubik+Wet+Paint&family=Vast+Shadow&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Bungee+Spice&family=Cantata+One&family=Codystar:wght@300&family=Delius+Swash+Caps&family=Pacifico&family=Rubik+Wet+Paint&family=Vast+Shadow&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Bungee+Spice&family=Cantata+One&family=Codystar:wght@300&family=Delius+Swash+Caps&family=Libre+Baskerville&family=Pacifico&family=Rubik+Wet+Paint&family=Vast+Shadow&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Bungee+Spice&family=Cantata+One&family=Codystar:wght@300&family=Delius+Swash+Caps&family=Libre+Baskerville&family=Pacifico&family=Rubik+Wet+Paint&family=Vast+Shadow&display=swap');
+
+
+
+
+
+/** selector universal para el reseteo de la pagina */
+*{
+    /**
+        con el universal solo podemos tener: margin, padding
+     */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /** validamos que las cajas hijas esten solo en el contenedor padre */
+}
+.tituloindex{
+    font-family: 'Alkatra', cursive;
+    text-align: center;
+    font-size: 200%;
+    
+}
+
+.parrafodehistoria1{
+    font-family: 'Alkatra', cursive;
+    background-color: #6a6b9480;
+    text-align: center;
+    font-size: 200%;
+    margin-bottom: 62px;
+}
+.parrafodehistoria2{
+    font-family: 'Alkatra', cursive;
+    color: #FAF3EB;
+    background-color:#6c7a9494;
+    text-align: center;
+    font-size: 200%;
+    padding-bottom: 5%;
+    margin-top: 44px;
+}
+.historias{
+    font-size: 540%;
+    padding-top: 4%;
+    color: #fffefe;
+    padding-left: 14%;
+   
+}
+
+body{
+    /** asignando tipo de fuente */
+    font-family: 'Delius Swash Caps', cursive;
+    background-color: #c7c2c2;
+    background-image: url("../img/sss.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+      
+}
+
+header{
+    /** propiedad para colocar imagen de fondo */
+    background-image: url(../img/wwww.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 300px; /* asignando alto a la caja */
+    color: white;
+    text-align: center; /** alinea el texto al centro */
+    line-height: 200px; /** propiedad que toma el espacio del alto para que el texto
+                        quede al centro */
+}
+
+nav{
+    background-color: #101E48;
+    text-align: center;
+    
+}
+
+nav ul li{
+    /**
+        display: propiedad que define como se va colocar uno o varios elementos
+        dentro de valores estan: inline-block, block, flex
+     */
+    display: inline-block;  /** cada elemento li estara en linea */
+    line-height: 50px;
+     /** no va tener ningun estilo la lista */
+    margin: 0 10px;
+}
+
+nav ul li a{
+    color: #E88F2A;
+    font-size: 18px;
+    padding: 7px 12px;
+    border-radius: 6px;
+    text-transform: uppercase;
+
+}
+li a.active, li a:hover{
+    background: #509F36;
+    transition: .5s;
+    
+}
+
+
+nav ul li a{
+    color: white;
+    text-decoration: none; /** no va tener ninguna decoracion el texto */
+}
+
+/** agregando estilos al contenido principal */
+.box-center{
+    width: 80%; /** define el ancho */
+    margin: auto; /** se toma el margen automatico que provee el navegador */
+    padding: 25px; 
+}
+
+h1{
+    font-family: 'Alkatra', cursive;
+}
+.parrafo12{
+    font-family: 'Cantata One', serif;
+    color: #FAF3EB;
+    padding-top: 2%;
+    font-size: 150%;
+    text-align: center;
+}
+
+.titulo{
+    text-align: center;
+    font-family: 'Bungee Spice', cursive;
+
+   
+    /** 
+        1rem => 16px
+    */
+    font-size: 2rem; /** asignando tamaño de la fuente */
+    color: #ff0000;
+}
+.titulo2{
+    text-align: center;
+    padding-top: 11%;
+    padding-bottom: 2%;
+    /** 
+        1rem => 16px
+    */
+    font-size: 2rem; /** asignando tamaño de la fuente */
+    color: #1221a3;
+}
+
+.box-center{
+    width: 80%; /** define el ancho */
+    margin: auto; /** se toma el margen automatico que provee el navegador */
+    padding: 25px; 
+}
+
+#image{
+    width: 60%;
+}
+
+
+footer{
+    background-image: url(../img/footer.jpg) ;
+    
+    padding-bottom: 5%;
+    padding-top: -5%;
+    background-position: 22%;
+}
+
+/** 
+    display: Asigna como va trabajar un elemento
+        -inline-block: elementos que se ponen en bloquen y en linea
+        -flex: los elementos se asignan de forma flexibe
+        -grid: los elementos estaran asociados en columnas y filas
+*/
+
+.footer_container{
+    display: grid;
+    /** asignamos cuantas columnas queremos  */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 50px 0; /** 50px arriba y abajo, 0 pixeles derecha e izquierda */
+    /** gap: espacio que le asignamos dentro de las columnas */
+    gap: 20px;
+    color: white;
+}
+.active {
+    background-color: #f00;
+    color: #fff;
+  }
+
+/** diseñando el apartado de los iconos */
+.margen{
+    margin: 30px 0;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap; /** estamos trabajando con elementos si van estar en fila y los estamos en volviendo
+                            en una sola linea */
+}
+
+.icons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #470de7;
+    border-radius: 20%;
+    color: white;
+    margin: 5px;
+}
+
+.footer_container .info .icons{
+    width: 60%;
+}
+
+.footer_container .info .icons a{
+    width: 50px;
+    height: 50px;
+}
+
+/** 
+    pseudoclase: hover
+*/
+.footer_container .info .icons a:hover{
+    background: transparent;
+}
+
+
+/** apartado de viajes.html */
+.seccion-card{
+    display: flex; /** indicamos que los elementos van a ser flexibles */
+    justify-content: space-around;
+    flex-flow: row wrap; /** envuelve los elementos en una fila */
+}
+
+.box-centerh{
+    display: flex; /** indicamos que los elementos van a ser flexibles */
+    justify-content: space-around;
+    flex-flow: row wrap; /** envuelve los elementos en una fila */
+}
+
+.card{
+    width: 30%;
+    height: 300px;
+    /** colocando sombra al contenedor */
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); /** x (horizontal), y(vertical), blur-radius (desenfoque), spread-radius (propagacion), color */
+    margin-bottom: 30px;
+    background-size: cover; /** indicamos que lo haya dentro de la caja se va adaptar al tamaño de la tarjeta */
+    background-position: center; /** indicamos el posicionamiento de los elementos de la tarjeta */
+    transition: all .5s;
+}
+
+.seccion-card img{
+    /** */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /** solo se utiliza para imagenes o videos que se adapten al tamaño del contenedor */
+    
+}
+
+.card:hover{
+    transform: scale(1.1); /** x= 1.1, y = 1.1) */
+}
+
+.seccion-videos{
+    display: flex; /** indicamos que los elementos van a ser flexibles */
+    justify-content: space-around;
+    flex-flow: row wrap; /** envuelve los elementos en una fila */
+    padding-bottom: 4%;
+}
+
+.videos{
+    width: 30%;
+    height: 300px;
+    /** colocando sombra al contenedor */
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); /** x (horizontal), y(vertical), blur-radius (desenfoque), spread-radius (propagacion), color */
+    margin-bottom: 30px;
+    background-size: cover; /** indicamos que lo haya dentro de la caja se va adaptar al tamaño de la tarjeta */
+    background-position: center; /** indicamos el posicionamiento de los elementos de la tarjeta */
+    transition: all .5s;
+}
+
+.seccion-videos img{
+    /** */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /** solo se utiliza para imagenes o videos que se adapten al tamaño del contenedor */
+    
+}
+
+.videos:hover{
+    transform: scale(1.1); /** x= 1.1, y = 1.1) */
+}
+
+/** apartado de viajes.html */
+.seccion-card-index{
+    display: flex; /** indicamos que los elementos van a ser flexibles */
+    justify-content: space-around;
+    flex-flow: row wrap; /** envuelve los elementos en una fila */
+}
+
+.card-index{
+    width: 30%;
+    height: 300px;
+    /** colocando sombra al contenedor */
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); /** x (horizontal), y(vertical), blur-radius (desenfoque), spread-radius (propagacion), color */
+    margin-bottom: 30px;
+    background-size: cover; /** indicamos que lo haya dentro de la caja se va adaptar al tamaño de la tarjeta */
+    background-position: center; /** indicamos el posicionamiento de los elementos de la tarjeta */
+    transition: all .5s;
+}
+
+.seccion-card-index img{
+    /** */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /** solo se utiliza para imagenes o videos que se adapten al tamaño del contenedor */
+    
+}
+
+.card-index:hover{
+    transform: rotate(0.1turn); /** x= 1.1, y = 1.1) */
+}
+
+/** apartado de contacto.html */
+.contact-fondo{
+    background-image: url("../img/viaje4.jpg");
+    height: 40rem; /** 1rem = 16px */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -100px;
+}
+
+.formulario{
+    background-color: rgba(56, 37, 37, 0.411);
+    margin: -39rem auto 0 auto; /** top, right, bottom, left */
+    width: 95%;
+    padding: 3rem;
+}
+
+form label{
+    font-weight: bold; /** peso de la letra */
+    color:antiquewhite;
+}
+
+/** selector por atributo */
+input[type="text"],
+input[type="email"]{
+    width: 100%;
+    height: 30px;
+    padding: 3px 10px; /** top-bottom - right-left */
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    margin: 8px 0;
+    display: block; /** los elementos se aplican uno abajo del otro */
+    background-color: #c221214b;
+}
+
+textarea{
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ffffff52;
+    border-radius: 3px;
+    margin: 8px 0;
+    display: block; /** los elementos se aplican uno abajo del otro */
+    background-color: #4d3a3a38;
+}
+
+input[type="submit"]{
+    width: 100%;
+    padding: 8px;
+    margin-top: 32px;
+    border: 1px solid rgb(133, 125, 125);
+    background-color: #4d3a3a38;
+    color: white;
+    border-radius: 3px;
+}
+
+input[type="submit"]:hover{
+    background-color: #eeff005d;
+    border: 1px solid #2d218649;
+}
+
+:root {
+    --primary: #E88F2A;
+    --secondary: #FAF3EB;
+    --light: #FFFFFF;
+    --dark: #2B2825;
+}
+
+
+.border-inner {
+    position: relative;
+}
+
+
+
+/** aplicando media query */
+
+
+
+@media (max-width:768px){
+    .contact-fondo{
+        background-position: center;
+    }
+}
+
+@media (max-width: 1100px){
+    .icons{
+        width: 100% !important; /** con el !important asignamos que esto va ser mas importante */
+    }
+}
+
+/** aplicando estilos para pantallas pequeñas */
+@media (max-width: 550px){
+    .box-section{
+        display: inline-block;
+        text-align: center;
+    }
+
+    .footer_container{
+        /** asignamos una sola columna */
+        grid-template-columns: 1fr;
+    }
+
+    /** apartado de viajes.html */
+    .card{
+        width: 100%;
+    }
+
+    .contact-fondo{
+        background-size: none;
+        background-position: 65% -150px;
+    }
+
+}
+
+
+
+
+
+
